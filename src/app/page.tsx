@@ -1,10 +1,12 @@
 import { Button } from '@/components/ui/button'
-import React from 'react'
+import Link from 'next/link'
 
 export default function Home() {
   return (
     <div className='flex min-h-screen items-center justify-center'>
-      <Button>Click Me</Button>
+      Click <Link href="/documents/123">
+      <span className='text-blue-500 underline'>here</span>
+      </Link> to go to documentId
     </div>
   )
 }
